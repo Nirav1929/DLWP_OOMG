@@ -10,7 +10,8 @@ High-level APIs for building a DLWP model based on Keras and scikit-learn.
 
 import numpy as np
 from tensorflow.keras import models
-from tensorflow.keras.utils import multi_gpu_model
+#from tensorflow.keras.utils import multi_gpu_model
+from tensorflow.python.keras.utils.multi_gpu_utils import multi_gpu_model   #ABL
 
 from .generators import DataGenerator, SeriesDataGenerator, ArrayDataGenerator
 from .. import util

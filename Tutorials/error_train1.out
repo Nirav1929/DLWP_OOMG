@@ -1,0 +1,9 @@
+/home/ablowe/DLWP-CS/DLWP/model/models_torch.py:25: UserWarning: DLWPTorchNN is not available because PyTorch is not installed.
+  warnings.warn('DLWPTorchNN is not available because PyTorch is not installed.')
+2022-05-06 08:10:13.600071: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-05-06 08:10:16.304435: I tensorflow/core/profiler/lib/profiler_session.cc:136] Profiler session initializing.
+2022-05-06 08:10:16.304489: I tensorflow/core/profiler/lib/profiler_session.cc:155] Profiler session started.
+2022-05-06 08:10:16.304519: I tensorflow/core/profiler/lib/profiler_session.cc:172] Profiler session tear down.
+2022-05-06 08:10:16.310154: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2022-05-06 08:10:16.310584: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2794720000 Hz

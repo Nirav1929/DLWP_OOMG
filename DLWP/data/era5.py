@@ -17,10 +17,12 @@ import pandas as pd
 import xarray as xr
 from datetime import datetime
 from copy import deepcopy
-try:
-    import cdsapi
-except ImportError:
-    warnings.warn("module 'cdsapi' not found; retrieval of ERA5 data unavailable.")
+#try:                       #ABL COMMENT
+#    import cdsapi
+#except ImportError:
+#    warnings.warn("module 'cdsapi' not found; retrieval of ERA5 data unavailable.")
+import cdsapi
+
 
 
 # ==================================================================================================================== #
@@ -247,7 +249,7 @@ class ERA5Reanalysis(object):
                 self.raw_files.append('%s/%s_%s.nc' % (self._root_directory, self._file_id, variable))
 
     def retrieve(self, variables, levels=(), years='all', months='all', days='all', product='reanalysis', hourly=3,
-                 n_proc=4, verbose=False, request_kwargs=None, delete_temporary=False):
+                 n_proc=4, verbose=True, request_kwargs=None, delete_temporary=False):
         """
         Retrieve netCDF files of ERA5 reanalysis data. Must specify the variables and pressure levels desired.
         Iterates over variable/level pairs for each API request. Note that with 3-hourly data, one variable/level pair
